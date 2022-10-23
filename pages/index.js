@@ -21,6 +21,7 @@ export default function Home() {
   return (
     <div>
       <Title title="Home" />
+      {/* 만약 로딩이 안될시 나오는 상태화면 */}
       {!movies && <h4>Loading...</h4>}
       {movies.map(movie => <div key={movie.id}>
         <h4>{movie.original_title}</h4>
